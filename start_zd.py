@@ -259,7 +259,7 @@ def update(file, file1, file2, file3, file4, file5, dis1, dis2, dis3, dis4):
                 else:
                     face_zhi = n_cal.new_calculate(data, face_zhi, np, lg_)
                     data, price, point = n_fold.new_fold(data, face_zhi, price, point, np, math, pri_lg)
-                    # print(len(data['face']))
+                    print("Number of triangles：", len(data['face']))
                     jhl = 1 - len(data['face']) / length
                     if 0.1 <= jhl <= 0.103:
                         v = []
